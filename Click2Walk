@@ -1,0 +1,13 @@
+#!/bin/bash
+# Bash Script to move the guy left to right and back constantly. 
+
+ for (( c=1; c<=50000; c++ ))
+    do 
+	adb shell input touchscreen swipe 935 1435 935 1435 1000 #TapA
+	adb shell input touchscreen swipe 935 1435 935 1435 1000 #TapA
+	
+        adb shell input touchscreen swipe 400 1550 400 1550 5000 #right5s
+	#adb shell input touchscreen swipe 250 1700 250 1700 500 down0.5s 
+	adb shell input touchscreen swipe 100 1550 100 1550 5000 #left5s
+	#adb shell input touchscreen swipe 250 1400 250 1400 500 up0.5s
+    done
